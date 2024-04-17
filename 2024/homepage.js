@@ -4,4 +4,4 @@ var config_data = `
   "title": "Scouting PASS 2024",
   "page_title": "Crescendo",
   "checkboxAs": "10",
-}`
+}`;
