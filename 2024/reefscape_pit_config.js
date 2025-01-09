@@ -39,8 +39,7 @@ var config_data = `
     },
     { "name": "Max Pieces In Auto",
       "code": "trp",
-      "type": "number",
-      "defaultValue": "0",
+      "type": "number"
     },
        { "name": "Comments",
       "code": "co",
