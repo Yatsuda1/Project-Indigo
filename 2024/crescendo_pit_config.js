@@ -1,8 +1,8 @@
 var config_data = `
 {
   "dataFormat": "tsv",
-  "title": "Scouting PASS 2024",
-  "page_title": "Crescendo",
+  "title": "Reefscape Scouting 2025",
+  "page_title": "Reefscape",
   "pitConfig": "true",
   "prematch": [
     { "name": "Team Number",
@@ -29,27 +29,20 @@ var config_data = `
       },
       "defaultValue": "o"
     },
-    { "name": "Climb",
+    { "name": "Low Climb",
       "code": "clm",
       "type": "bool"
     },
-    { "name": "Trap Scoring",
-      "code": "trp",
+    { "name": "High Climb",
+      "code": "clm",
       "type": "bool"
     },
-    { "name": "Autos",
-      "code": "aut",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
+    { "name": "Max Pieces In Auto",
+      "code": "trp",
+      "type": "number"
+      "defaultValue": "0"
     },
-    { "name": "Other Special Features",
-      "code": "sct",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
-    },
-    { "name": "Comments",
+       { "name": "Comments",
       "code": "co",
       "type": "text",
       "size": 20,
