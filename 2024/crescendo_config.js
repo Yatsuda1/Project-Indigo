@@ -17,17 +17,6 @@ var config_data = `
       "type": "event",
       "defaultValue": "2024micmp2"
     },
-    { "name": "Match Level",
-      "code": "l",
-      "type": "level",
-      "choices": {
-        "qm": "Quals<br>",
-        "sf": "Semifinals<br>",
-        "f": "Finals"
-      },
-      "defaultValue": "qm",
-      "required": "true"
-    },
     { "name": "Match #",
       "code": "m",
       "type": "match",
@@ -54,60 +43,63 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
-    { "name": "Auto Start Position",
-      "code": "as",
-      "type": "clickable_image",
-      "filename": "2024/field_image.png",
-      "clickRestriction": "one",
-      "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
-      "shape": "circle 5 black red true"
-    }
   ],
   "auton": [
-    { "name": "Auton Note Pickup",
-      "code": "anp",
-      "type": "clickable_image",
-      "filename": "2024/field_image.png"
-    }, 
     { "name": "Leave Starting Zone",
       "code": "al",
       "type": "bool"
     },
-    { "name": "Amp Scores",
+    { "name": "L1 Coral Scores",
       "code": "aas",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
+    { "name": "L2 Coral Scores",
+      "code": "aas",
+      "type": "counter"
+    },
+    { "name": "L3 Coral Scores",
+      "code": "aas",
+      "type": "counter"
+    },
+    { "name": "L4 Coral Scores",
+      "code": "aas",
+      "type": "counter"
+    },
+    { "name": "Procesor Scores",
       "code": "ass",
       "type": "counter"
     }
   ],
   "teleop": [
-    { "name": "Speaker Shot Position",
-      "code": "tsp",
-      "type": "clickable_image",
-      "filename": "2024/field_image.png"
-    }, 
-    { "name": "Amp Scores",
-      "code": "tas",
+     { "name": "L1 Coral Scores",
+      "code": "aas",
       "type": "counter"
     },
-    { "name": "Speaker Scores (Normal)",
+    { "name": "L2 Coral Scores",
+      "code": "aas",
+      "type": "counter"
+    },
+    { "name": "L3 Coral Scores",
+      "code": "aas",
+      "type": "counter"
+    },
+    { "name": "L4 Coral Scores",
+      "code": "aas",
+      "type": "counter"
+    },
+    { "name": "Processor Scores",
       "code": "tss",
       "type": "counter"
     },
-    { "name": "Speaker Scores (Amplified)",
-      "code": "tsa",
+    { "name": "Net Scores",
+      "code": "tss",
       "type": "counter"
     },
-    { "name": "Missed Shots",
+
+    { "name": "Dropped Coral",
       "code": "tms",
       "type": "counter"
     },
-    { "name": "Passing Shots",
-      "code": "tf",
-      "type": "counter"
-    }, 
     { "name": "Pickup From",
       "code": "tpu",
       "type": "radio",
@@ -121,7 +113,7 @@ var config_data = `
     }
   ],
   "endgame": [
-    { "name": "Stage Timer",
+    { "name": "Climb Timer",
       "code": "dt",
       "type": "timer"
     },
@@ -129,31 +121,18 @@ var config_data = `
       "code": "fs",
       "type":"radio",
       "choices": {
-        "p": "Parked<br>",
-        "o": "Onstage<br>",
-        "h": "Harmony<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "D": "Deep Slimb<br>",
+        "S": "Shallow Climb<br>",
+        "F": "Attempted but failed<br>",
+        "P": "Parked<br>",
+        "X": "No Climb/Park Attempted<br>"
       },
       "defaultValue": "x"
     },
-    {
-      "name": "Chain Spotlighted?",
-      "code": "spt",
-      "type": "bool"
-    },
-    { "name": "Note(s) in Trap",
-      "code": "nit",
-      "type": "counter"
-    }
   ],
   "postmatch": [
     { "name": "Played Defense",
       "code": "def",
-      "type": "bool"
-    },
-    { "name": "Feeder Bot",
-      "code": "fed",
       "type": "bool"
     },
     { "name": "Died/Immobilized",
@@ -162,10 +141,6 @@ var config_data = `
     },
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
-      "type": "bool"
-    },
-    { "name": "Dropped Notes (>2)",
-      "code": "dn",
       "type": "bool"
     },
     { "name": "Comments",
