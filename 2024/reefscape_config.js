@@ -15,7 +15,18 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2025milac",
+      "defaultValue": "2025ilpe",
+      "required": "true"
+    },
+    { "name": "Match Level",
+      "code": "l",
+      "type": "level",
+      "choices": {
+        "qm": "Quals<br>",
+        "sf": "Semifinals<br>",
+        "f": "Finals"
+      },
+      "defaultValue": "qm",
       "required": "true"
     },
     { "name": "Match #",
@@ -43,6 +54,14 @@ var config_data = `
       "type": "team",
       "min": 1,
       "max": 99999
+    },
+    { "name": "Auto Start Position",
+      "code": "as",
+      "type": "clickable_image",
+      "filename": "2025/field_image.png",
+      "clickRestriction": "one",
+      "allowableResponses": "6 7 18 19 30 31 42 43 54 55 66 67",
+      "shape": "circle 5 black red true"
     }
   ],
   "auton": [
@@ -63,10 +82,6 @@ var config_data = `
       "type": "counter"
     },
     { "name": "Coral L4",
-      "code": "ac4",
-      "type": "counter"
-    },
-     { "name": "Dropped Coral",
       "code": "ac4",
       "type": "counter"
     },
@@ -96,10 +111,6 @@ var config_data = `
       "code": "tc4",
       "type": "counter"
     },
-     { "name": "Dropped Coral",
-      "code": "ac4",
-      "type": "counter"
-    },
     { "name": "Processor Score",
       "code": "tps",
       "type": "counter"
@@ -112,7 +123,7 @@ var config_data = `
       "code": "tpu",
       "type": "radio",
       "choices": {
-        "c": "Coral Station<br>",
+        "s": "Coral Station<br>",
         "f": "Floor<br>",
         "b": "Both<br>",
         "x": "Not Attempted"
@@ -133,10 +144,10 @@ var config_data = `
       "code": "efs",
       "type":"radio",
       "choices": {
-        "d": "Deep Climb<br>",
-        "s": "Shallow Climb<br>",
-        "f": "Failed Climb<br>",
-        "p": "Parked<br>",
+        "bp": "Parked<br>",
+        "ba": "Parked, failed climb<br>",
+        "bs": "Shallow Cage<br>",
+        "bd": "Deep Cage<br>",
         "x": "Not attempted"
       },
       "defaultValue": "x"
@@ -147,12 +158,67 @@ var config_data = `
       "code": "cop",
       "type": "bool"
     },
+    { "name": "Algae Left in Reef",
+      "code": "alr",
+      "type": "number",
+      "min": 0,
+      "max": 9,
+      "defaultValue": 0
+    },
+    { "name": "Driver Skill",
+      "code": "ds",
+      "type": "radio",
+      "choices": {
+        "n": "Not Effective<br>",
+        "a": "Average<br>",
+        "v": "Very Effective<br>",
+        "x": "Not Observed"
+      },
+      "defaultValue": "x"
+    },
+    { "name": "Defense Rating",
+      "code": "dr",
+      "type": "radio",
+      "choices": {
+        "b": "Below Average<br>",
+        "a": "Average<br>",
+        "g": "Good<br>",
+        "e": "Excellent<br>",
+        "x": "Did not play defense"
+      },
+      "defaultValue": "x"
+    },
+    { "name": "Speed Rating",
+      "code": "sr",
+      "type": "radio",
+      "choices": {
+        "1": "1 (slow)<br>",
+        "2": "2<br>",
+        "3": "3<br>",
+        "4": "4<br>",
+        "5": "5 (fast)"
+      },
+      "defaultValue":"3"
+    },
     { "name": "Died/Immobilized",
       "code": "die",
       "type": "bool"
     },
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
+      "type": "bool"
+    },
+    { "name": "Dropped Coral (>2)",
+      "code": "dc",
+      "type": "bool"
+    },
+    { "name": "Dropped Algae (>2)",
+      "code": "da",
+      "type": "bool"
+    },
+    { "name": "Make good<br>alliance partner?",
+      "tooltip": "Would you want this robot on your alliance in eliminations?",
+      "code": "all",
       "type": "bool"
     },
     { "name": "Comments",
