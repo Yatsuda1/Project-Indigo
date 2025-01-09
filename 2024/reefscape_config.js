@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2024micmp2"
+      "defaultValue": "2025milac"
     },
     { "name": "Match #",
       "code": "m",
@@ -28,12 +28,12 @@ var config_data = `
       "code": "r",
       "type": "robot",
       "choices": {
-        "r1": "Red-1",
+        "r1": "Red-1<br>",
         "b1": "Blue-1<br>",
-        "r2": "Red-2",
+        "r2": "Red-2<br>",
         "b2": "Blue-2<br>",
-        "r3": "Red-3",
-        "b3": "Blue-3"
+        "r3": "Red-3<br>",
+        "b3": "Blue-3<br>"
       },
       "required":"true"
     },
@@ -44,7 +44,7 @@ var config_data = `
       "max": 99999
     },
   ],
-  "auton": [
+  "auto": [
     { "name": "Leave Starting Zone",
       "code": "al",
       "type": "bool"
