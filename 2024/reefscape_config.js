@@ -44,7 +44,7 @@ var config_data = `
       "max": 99999
     },
   ],
-  "auto": [
+  "auton": [
     { "name": "Leave Starting Zone",
       "code": "al",
       "type": "bool"
