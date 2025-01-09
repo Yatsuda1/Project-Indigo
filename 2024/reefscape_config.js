@@ -1,67 +1,176 @@
 {
     "dataFormat": "tsv",
-    "title": "Reefscape Scouting 2025",
-    "page_title": "Reefscape",
-    "pitConfig": "true",
+    "title": "Scouting PASS 2024",
+    "page_title": "Crescendo",
+    "checkboxAs": "10",
     "prematch": [
         {
-            "name": "Team Number",
+            "name": "Scouter Initials",
+            "code": "s",
+            "type": "scouter",
+            "size": 5,
+            "maxSize": 5,
+            "required": "true"
+        },
+        {
+            "name": "Event",
+            "code": "e",
+            "type": "event",
+            "defaultValue": "2025milac"
+        },
+        {
+            "name": "Match #",
+            "code": "m",
+            "type": "match",
+            "min": 1,
+            "max": 150,
+            "required": "true"
+        },
+        {
+            "name": "Robot",
+            "code": "r",
+            "type": "robot",
+            "choices": {
+                "r1": "Red-1<br>",
+                "b1": "Blue-1<br>",
+                "r2": "Red-2<br>",
+                "b2": "Blue-2<br>",
+                "r3": "Red-3<br>",
+                "b3": "Blue-3<br>"
+            },
+            "required": "true"
+        },
+        {
+            "name": "Team #",
             "code": "t",
-            "type": "number"
+            "type": "team",
+            "min": 1,
+            "max": 99999
+        }
+    ],
+    "auton": [
+        {
+            "name": "Leave Starting Zone",
+            "code": "al",
+            "type": "bool"
         },
         {
-            "name": "Dimensions",
-            "code": "dmn",
-            "type": "text"
+            "name": "L1 Coral Scores",
+            "code": "aas",
+            "type": "counter"
         },
         {
-            "name": "Weight",
-            "code": "wei",
-            "type": "number",
-            "defaultValue": "0"
+            "name": "L2 Coral Scores",
+            "code": "aas",
+            "type": "counter"
         },
         {
-            "name": "Drivetrain",
-            "code": "drv",
+            "name": "L3 Coral Scores",
+            "code": "aas",
+            "type": "counter"
+        },
+        {
+            "name": "L4 Coral Scores",
+            "code": "aas",
+            "type": "counter"
+        },
+        {
+            "name": "Procesor Scores",
+            "code": "ass",
+            "type": "counter"
+        }
+    ],
+    "teleop": [
+        {
+            "name": "L1 Coral Scores",
+            "code": "aas",
+            "type": "counter"
+        },
+        {
+            "name": "L2 Coral Scores",
+            "code": "aas",
+            "type": "counter"
+        },
+        {
+            "name": "L3 Coral Scores",
+            "code": "aas",
+            "type": "counter"
+        },
+        {
+            "name": "L4 Coral Scores",
+            "code": "aas",
+            "type": "counter"
+        },
+        {
+            "name": "Processor Scores",
+            "code": "tss",
+            "type": "counter"
+        },
+        {
+            "name": "Net Scores",
+            "code": "tss",
+            "type": "counter"
+        },
+        {
+            "name": "Dropped Coral",
+            "code": "tms",
+            "type": "counter"
+        },
+        {
+            "name": "Pickup From",
+            "code": "tpu",
             "type": "radio",
             "choices": {
-                "s": "Swerve<br>",
-                "t": "Tank<br>",
-                "m": "Mechanum<br>",
-                "o": "Other"
+                "s": "Source<br>",
+                "f": "Floor<br>",
+                "b": "Both<br>",
+                "x": "Not Attempted"
             },
-            "defaultValue": "o"
+            "defaultValue": "x"
+        }
+    ],
+    "endgame": [
+        {
+            "name": "Climb Timer",
+            "code": "dt",
+            "type": "timer"
         },
         {
-            "name": "Low Climb",
-            "code": "clm",
+            "name": "Final Status",
+            "code": "fs",
+            "type": "radio",
+            "choices": {
+                "D": "Deep Slimb<br>",
+                "S": "Shallow Climb<br>",
+                "F": "Attempted but failed<br>",
+                "P": "Parked<br>",
+                "X": "No Climb/Park Attempted<br>"
+            },
+            "defaultValue": "x"
+        }
+    ],
+    "postmatch": [
+        {
+            "name": "Played Defense",
+            "code": "def",
             "type": "bool"
         },
         {
-            "name": "High Climb",
-            "code": "clm",
+            "name": "Died/Immobilized",
+            "code": "die",
             "type": "bool"
         },
         {
-            "name": "Max Pieces In Auto",
-            "code": "trp",
-            "type": "number"
+            "name": "Tippy<br>(almost tipped over)",
+            "code": "tip",
+            "type": "bool"
         },
         {
             "name": "Comments",
             "code": "co",
             "type": "text",
-            "size": 20,
-            "maxSize": 250
-        },
-        {
-            "name": "Took a picture?",
-            "code": "pic",
-            "type": "bool"
+            "size": 15,
+            "maxSize": 150
         }
-    ],
-    "auton": [],
-    "teleop": [],
-    "endgame": [],
-    "postmatch": []
+    ]
 }
