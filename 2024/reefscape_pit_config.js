@@ -29,11 +29,11 @@ var config_data = `
       },
       "defaultValue": "o"
     },
-    { "name": "Low Climb",
+    { "name": "Deep Climb",
       "code": "clm",
       "type": "bool"
     },
-    { "name": "High Climb",
+    { "name": "Shallow Climb",
       "code": "clm",
       "type": "bool"
     },
