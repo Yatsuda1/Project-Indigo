@@ -1,7 +1,8 @@
+var config_data = `
 {
   "dataFormat": "tsv",
-  "title": "Scouting PASS 2025",
-  "page_title": "REEFSCAPE",
+  "title": "Scouting PASS 2024",
+  "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
@@ -14,7 +15,17 @@
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2025ilpe",
+      "defaultValue": "2024micmp2"
+    },
+    { "name": "Match Level",
+      "code": "l",
+      "type": "level",
+      "choices": {
+        "qm": "Quals<br>",
+        "sf": "Semifinals<br>",
+        "f": "Finals"
+      },
+      "defaultValue": "qm",
       "required": "true"
     },
     { "name": "Match #",
@@ -42,100 +53,107 @@
       "type": "team",
       "min": 1,
       "max": 99999
+    },
+    { "name": "Auto Start Position",
+      "code": "as",
+      "type": "clickable_image",
+      "filename": "2024/field_image.png",
+      "clickRestriction": "one",
+      "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
+      "shape": "circle 5 black red true"
     }
   ],
   "auton": [
-    { "name": "Leave Starting Line",
+    { "name": "Auton Note Pickup",
+      "code": "anp",
+      "type": "clickable_image",
+      "filename": "2024/field_image.png"
+    }, 
+    { "name": "Leave Starting Zone",
       "code": "al",
       "type": "bool"
     },
-    { "name": "Coral L1",
-      "code": "ac1",
+    { "name": "Amp Scores",
+      "code": "aas",
       "type": "counter"
     },
-    { "name": "Coral L2",
-      "code": "ac2",
-      "type": "counter"
-    },
-    { "name": "Coral L3",
-      "code": "ac3",
-      "type": "counter"
-    },
-    { "name": "Coral L4",
-      "code": "ac4",
-      "type": "counter"
-    },
-    { "name": "Processor Score",
-      "code": "aps",
-      "type": "counter"
-    },
-    { "name": "Net Score",
-      "code": "ans",
+    { "name": "Speaker Scores",
+      "code": "ass",
       "type": "counter"
     }
   ],
   "teleop": [
-    { "name": "Coral L1",
-      "code": "tc1",
+    { "name": "Speaker Shot Position",
+      "code": "tsp",
+      "type": "clickable_image",
+      "filename": "2024/field_image.png"
+    }, 
+    { "name": "Amp Scores",
+      "code": "tas",
       "type": "counter"
     },
-    { "name": "Coral L2",
-      "code": "tc2",
+    { "name": "Speaker Scores (Normal)",
+      "code": "tss",
       "type": "counter"
     },
-    { "name": "Coral L3",
-      "code": "tc3",
+    { "name": "Speaker Scores (Amplified)",
+      "code": "tsa",
       "type": "counter"
     },
-    { "name": "Coral L4",
-      "code": "tc4",
+    { "name": "Missed Shots",
+      "code": "tms",
       "type": "counter"
     },
-    { "name": "Processor Score",
-      "code": "tps",
+    { "name": "Fouls",
+      "code": "tf",
       "type": "counter"
-    },
-    { "name": "Net Score",
-      "code": "tns",
-      "type": "counter"
-    },
+    }, 
     { "name": "Pickup From",
       "code": "tpu",
       "type": "radio",
       "choices": {
-        "s": "Coral Station<br>",
+        "s": "Source<br>",
         "f": "Floor<br>",
         "b": "Both<br>",
         "x": "Not Attempted"
       },
       "defaultValue": "x"
-    },
-    { "name": "Scored in Opponent Processor",
-      "code": "opp",
-      "type": "bool"
     }
   ],
   "endgame": [
-    { "name": "Barge Timer",
-      "code": "ebt",
+    { "name": "Stage Timer",
+      "code": "dt",
       "type": "timer"
     },
     { "name": "Final Status",
-      "code": "efs",
+      "code": "fs",
       "type":"radio",
       "choices": {
         "p": "Parked<br>",
-        "f": "Failed Climb<br>",
-        "s": "Shallow Cage<br>",
-        "d": "Deep Cage<br>",
+        "o": "Onstage<br>",
+        "h": "Harmony<br>",
+        "a": "Attempted but failed<br>",
         "x": "Not attempted"
       },
       "defaultValue": "x"
+    },
+    {
+      "name": "Chain Spotlighted?",
+      "code": "spt",
+      "type": "bool"
+    },
+    { "name": "Note(s) in Trap",
+      "code": "nit",
+      "type": "counter"
     }
   ],
   "postmatch": [
-    { "name": "Attained Coopertition Pt",
-      "code": "cop",
+    { "name": "Played Defense",
+      "code": "def",
+      "type": "bool"
+    },
+    { "name": "Feeder Bot",
+      "code": "fed",
       "type": "bool"
     },
     { "name": "Died/Immobilized",
@@ -146,11 +164,15 @@
       "code": "tip",
       "type": "bool"
     },
+    { "name": "Dropped Notes (>2)",
+      "code": "dn",
+      "type": "bool"
+    },
     { "name": "Comments",
       "code": "co",
       "type": "text",
       "size": 15,
-      "maxSize": 55
+      "maxSize": 150
     }
   ]
-}
+}`;
