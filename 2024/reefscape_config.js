@@ -27,6 +27,7 @@ var config_data = `
       },
       "defaultValue": "qm",
       "required": "true"
+      },
     { "name": "Match #",
       "code": "m",
       "type": "match",
