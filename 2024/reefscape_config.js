@@ -17,6 +17,16 @@ var config_data = `
       "type": "event",
       "defaultValue": "2025milac"
     },
+     { "name": "Match Level",
+      "code": "l",
+      "type": "level",
+      "choices": {
+        "qm": "Quals<br>",
+        "sf": "Semifinals<br>",
+        "f": "Finals"
+      },
+      "defaultValue": "qm",
+      "required": "false"
     { "name": "Match #",
       "code": "m",
       "type": "match",
