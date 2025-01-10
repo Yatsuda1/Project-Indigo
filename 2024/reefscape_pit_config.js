@@ -29,13 +29,16 @@ var config_data = `
       },
       "defaultValue": "o"
     },
-    { "name": "Deep Climb",
-      "code": "clm",
-      "type": "bool"
-    },
-    { "name": "Shallow Climb",
-      "code": "clm",
-      "type": "bool"
+  { "name": "Barge Hang",
+      "code": "drv",
+      "type": "radio",
+      "choices": {
+        "d": "Deep Hang<br>",
+        "s": "Shallow Hang<br>",
+        "b": "Both<br>",
+        "n": "None"
+      },
+      "defaultValue": "o"
     },
     { "name": "Max Pieces In Auto",
       "code": "trp",
