@@ -27,7 +27,7 @@ var config_data = `
         "m": "Mechanum<br>",
         "o": "Other"
       },
-      "defaultValue": "o"
+      "defaultValue": "s"
     },
   { "name": "Barge Hang",
       "code": "drv",
@@ -38,7 +38,7 @@ var config_data = `
         "b": "Both<br>",
         "n": "None"
       },
-      "defaultValue": "o"
+      "defaultValue": "n"
     },
     { "name": "Max Pieces In Auto",
       "code": "trp",
