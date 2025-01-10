@@ -30,7 +30,7 @@ var config_data = `
       "defaultValue": "s"
     },
   { "name": "Barge Hang",
-      "code": "drv",
+      "code": "hng",
       "type": "radio",
       "choices": {
         "d": "Deep Hang<br>",
