@@ -2,7 +2,7 @@ var config_data = `
 {
   "dataFormat": "tsv",
   "title": "Reefscape Scouting 2025",
-  "page_title": "Reefscape",
+  "page_title": "REEFSCAPE",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
@@ -15,9 +15,10 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2025milac"
+      "defaultValue": "2024milac",
+      "required": "true"
     },
-     { "name": "Match Level",
+    { "name": "Match Level",
       "code": "l",
       "type": "level",
       "choices": {
@@ -27,7 +28,7 @@ var config_data = `
       },
       "defaultValue": "qm",
       "required": "true"
-      },
+    },
     { "name": "Match #",
       "code": "m",
       "type": "match",
