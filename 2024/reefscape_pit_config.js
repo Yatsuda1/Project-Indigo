@@ -41,7 +41,7 @@ var config_data = `
       "defaultValue": "n"
     },
     { "name": "Max Pieces In Auto",
-      "code": "trp",
+      "code": "apc",
       "type": "number"
     },
        { "name": "Comments",
