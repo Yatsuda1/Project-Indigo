@@ -124,7 +124,7 @@ var config_data = `
       "code": "td",
       "type": "counter"
     },
-    { "name": "Pickup From",
+    { "name": "Can Pickup Coral From",
       "code": "tpu",
       "type": "radio",
       "choices": {
