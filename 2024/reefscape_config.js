@@ -26,7 +26,7 @@ var config_data = `
         "f": "Finals"
       },
       "defaultValue": "qm",
-      "required": "false"
+      "required": "true"
     { "name": "Match #",
       "code": "m",
       "type": "match",
