@@ -116,7 +116,7 @@ var config_data = `
       "code": "tps",
       "type": "counter"
     },
-    { "name": "Net Score",
+    { "name": "Net Scores",
       "code": "tns",
       "type": "counter"
     },
