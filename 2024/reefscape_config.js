@@ -1,8 +1,8 @@
 var config_data = `
 {
   "dataFormat": "tsv",
-  "title": "Scouting PASS 2024",
-  "page_title": "Crescendo",
+  "title": "Reefscape Scouting 2025",
+  "page_title": "Reefscape",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
@@ -15,18 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2024micmp2"
-    },
-    { "name": "Match Level",
-      "code": "l",
-      "type": "level",
-      "choices": {
-        "qm": "Quals<br>",
-        "sf": "Semifinals<br>",
-        "f": "Finals"
-      },
-      "defaultValue": "qm",
-      "required": "true"
+      "defaultValue": "2025milac"
     },
     { "name": "Match #",
       "code": "m",
@@ -59,55 +48,70 @@ var config_data = `
       "type": "clickable_image",
       "filename": "2024/field_image.png",
       "clickRestriction": "one",
-      "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
+      "allowableResponses": "6 7 18 19 30 31 42 43 54 55 66 67",
       "shape": "circle 5 black red true"
     }
   ],
   "auton": [
-    { "name": "Auton Note Pickup",
-      "code": "anp",
-      "type": "clickable_image",
-      "filename": "2024/field_image.png"
-    }, 
     { "name": "Leave Starting Zone",
       "code": "al",
       "type": "bool"
     },
-    { "name": "Amp Scores",
-      "code": "aas",
+    { "name": "L1 Coral Scores",
+      "code": "ac1",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
-      "code": "ass",
+    { "name": "L2 Coral Scores",
+      "code": "ac2",
+      "type": "counter"
+    },
+    { "name": "L3 Coral Scores",
+      "code": "ac3",
+      "type": "counter"
+    },
+    { "name": "L4 Coral Scores",
+      "code": "ac4",
+      "type": "counter"
+    },
+    { "name": "Processor Scores",
+      "code": "aps",
+      "type": "counter"
+    },
+    { "name": "Drops",
+      "code": "ad",
       "type": "counter"
     }
   ],
   "teleop": [
-    { "name": "Speaker Shot Position",
-      "code": "tsp",
-      "type": "clickable_image",
-      "filename": "2024/field_image.png"
-    }, 
-    { "name": "Amp Scores",
-      "code": "tas",
+
+    { "name": "L1 Coral Scores",
+      "code": "tc1",
       "type": "counter"
     },
-    { "name": "Speaker Scores (Normal)",
-      "code": "tss",
+    { "name": "L2 Coral Scores",
+      "code": "tc2",
       "type": "counter"
     },
-    { "name": "Speaker Scores (Amplified)",
-      "code": "tsa",
+    { "name": "L3 Coral Scores",
+      "code": "tc3",
       "type": "counter"
     },
-    { "name": "Missed Shots",
-      "code": "tms",
+    { "name": "L4 Coral Scores",
+      "code": "tc4",
       "type": "counter"
     },
-    { "name": "Fouls",
-      "code": "tf",
+    { "name": "Processor Scores",
+      "code": "tps",
       "type": "counter"
-    }, 
+    },
+    { "name": "Net Score",
+      "code": "tns",
+      "type": "counter"
+    },
+    { "name": "Drops",
+      "code": "td",
+      "type": "counter"
+    },
     { "name": "Pickup From",
       "code": "tpu",
       "type": "radio",
@@ -121,8 +125,8 @@ var config_data = `
     }
   ],
   "endgame": [
-    { "name": "Stage Timer",
-      "code": "dt",
+    { "name": "Barge Timer",
+      "code": "eb",
       "type": "timer"
     },
     { "name": "Final Status",
@@ -130,42 +134,21 @@ var config_data = `
       "type":"radio",
       "choices": {
         "p": "Parked<br>",
-        "o": "Onstage<br>",
-        "h": "Harmony<br>",
-        "a": "Attempted but failed<br>",
+        "s": "Shallow Hang<br>",
+        "d": "Deep Hang<br>",
+        "f": "Attempted But Failed<br>",
         "x": "Not attempted"
       },
       "defaultValue": "x"
-    },
-    {
-      "name": "Chain Spotlighted?",
-      "code": "spt",
-      "type": "bool"
-    },
-    { "name": "Note(s) in Trap",
-      "code": "nit",
-      "type": "counter"
     }
   ],
   "postmatch": [
-    { "name": "Played Defense",
-      "code": "def",
-      "type": "bool"
-    },
-    { "name": "Feeder Bot",
-      "code": "fed",
-      "type": "bool"
-    },
     { "name": "Died/Immobilized",
       "code": "die",
       "type": "bool"
     },
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
-      "type": "bool"
-    },
-    { "name": "Dropped Notes (>2)",
-      "code": "dn",
       "type": "bool"
     },
     { "name": "Comments",
