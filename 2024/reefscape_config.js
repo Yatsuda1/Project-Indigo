@@ -99,7 +99,6 @@ var config_data = `
     }
   ],
   "teleop": [
-
     { "name": "L1 Coral Scores",
       "code": "tc1",
       "type": "counter"
@@ -127,7 +126,7 @@ var config_data = `
     { "name": "Drops",
       "code": "td",
       "type": "counter"
-    },
+    }
   ],
   "endgame": [
     { "name": "Barge Timer",
