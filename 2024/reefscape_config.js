@@ -124,7 +124,7 @@ var config_data = `
       "type": "counter"
     },
     { "name": "Drops",
-      "code": "td",
+      "code": "tdc",
       "type": "counter"
     }
   ],
