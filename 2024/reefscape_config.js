@@ -89,7 +89,7 @@ var config_data = `
       "code": "aps",
       "type": "counter"
     },
-     { "name": "Net Scores",
+    { "name": "Net Scores",
       "code": "ans",
       "type": "counter"
     },
