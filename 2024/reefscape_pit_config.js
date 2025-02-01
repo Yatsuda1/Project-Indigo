@@ -61,7 +61,7 @@ var config_data = `
             "type": "radio",
             "choices": {
                 "g": "Ground<br>",
-                "f": "Feeder Station<br>",
+                "f": "Coral Station<br>",
                 "b": "Both<br>",
                 "n": "None"
             },
@@ -101,7 +101,9 @@ var config_data = `
         {
             "name": "Best Auto",
             "code": "apc",
-            "type": "number"
+            "type": "text"
+            "size": 20,
+            "maxSize": 100
         },
         {
             "name": "Comments",
