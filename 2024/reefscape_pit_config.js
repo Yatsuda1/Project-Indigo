@@ -45,6 +45,16 @@ var config_data = `
             },
             "defaultValue": "r"
         },
+         {
+            "name": "Can Process Algae?",
+            "code": "ASP",
+            "type": "bool"
+        },
+         {
+            "name": "Can Score Algae In Net?",
+            "code": "ASN",
+            "type": "bool"
+        },
         {
             "name": "Can Intake Coral From",
             "code": "ICF",
