@@ -128,17 +128,6 @@ var config_data = `
       "code": "td",
       "type": "counter"
     },
-    { "name": "Can Pickup Coral From",
-      "code": "tpu",
-      "type": "radio",
-      "choices": {
-        "s": "Source<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
-    }
   ],
   "endgame": [
     { "name": "Barge Timer",
