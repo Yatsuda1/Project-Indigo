@@ -29,6 +29,7 @@ var config_data = `
       },
       "defaultValue": "s"
     },
+
   { "name": "Barge Hang",
       "code": "hng",
       "type": "radio",
@@ -40,7 +41,7 @@ var config_data = `
       },
       "defaultValue": "n"
     },
-    { "name": "Max Pieces In Auto",
+    { "name": "Best Auto",
       "code": "apc",
       "type": "number"
     },
@@ -55,7 +56,46 @@ var config_data = `
       "type": "bool"
     }
   ],
-  "auton": [
+  "Scoring Info": [
+  
+      { "name": "Can Intake Algae From",
+      "code": "IAF",
+      "type": "radio",
+      "choices": {
+        "g": "Ground<br>",
+        "r": "Reef<br>",
+        "b": "Both<br>",
+        "n": "None"
+      },
+      "defaultValue": "r"
+    },
+     { "name": "Can Intake Coral From",
+      "code": "ICF",
+      "type": "radio",
+      "choices": {
+        "g": "Ground<br>",
+        "f": "Feeder Station<br>",
+        "b": "Both<br>",
+        "n": "None"
+      },
+      "defaultValue": "f"
+    },
+    { "name": "Can Score Coral L1?",
+      "code": "Cl1",
+      "type": "bool"
+    },
+    { "name": "Can Score Coral L2?",
+      "code": "CL2",
+      "type": "bool"
+    },
+    { "name": "Can Score Coral L3?",
+      "code": "CL3",
+      "type": "bool"
+    },
+    { "name": "Can Score Coral L4?",
+      "code": "CL$",
+      "type": "bool"
+    }
   ],
   "teleop": [
   ],
