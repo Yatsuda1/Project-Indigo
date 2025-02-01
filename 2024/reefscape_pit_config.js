@@ -29,35 +29,6 @@ var config_data = `
       },
       "defaultValue": "s"
     },
-
-  { "name": "Barge Hang",
-      "code": "hng",
-      "type": "radio",
-      "choices": {
-        "d": "Deep Hang<br>",
-        "s": "Shallow Hang<br>",
-        "b": "Both<br>",
-        "n": "None"
-      },
-      "defaultValue": "n"
-    },
-    { "name": "Best Auto",
-      "code": "apc",
-      "type": "number"
-    },
-       { "name": "Comments",
-      "code": "co",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
-    },
-    { "name": "Took a picture?",
-      "code": "pic",
-      "type": "bool"
-    }
-  ],
-  "Scoring Info": [
-  
       { "name": "Can Intake Algae From",
       "code": "IAF",
       "type": "radio",
@@ -96,6 +67,33 @@ var config_data = `
       "code": "CL$",
       "type": "bool"
     }
+  { "name": "Barge Hang",
+      "code": "hng",
+      "type": "radio",
+      "choices": {
+        "d": "Deep Hang<br>",
+        "s": "Shallow Hang<br>",
+        "b": "Both<br>",
+        "n": "None"
+      },
+      "defaultValue": "n"
+    },
+    { "name": "Best Auto",
+      "code": "apc",
+      "type": "number"
+    },
+       { "name": "Comments",
+      "code": "co",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
+    },
+    { "name": "Took a picture?",
+      "code": "pic",
+      "type": "bool"
+    }
+  ],
+  "Auto": [
   ],
   "teleop": [
   ],
