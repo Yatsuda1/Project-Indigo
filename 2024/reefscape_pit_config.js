@@ -101,7 +101,7 @@ var config_data = `
         {
             "name": "Best Auto",
             "code": "apc",
-            "type": "text"
+            "type": "text",
             "size": 20,
             "maxSize": 100
         },
