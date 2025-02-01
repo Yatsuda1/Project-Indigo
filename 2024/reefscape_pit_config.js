@@ -29,6 +29,7 @@ var config_data = `
       },
       "defaultValue": "s"
     },
+    
       { "name": "Can Intake Algae From",
       "code": "IAF",
       "type": "radio",
@@ -51,22 +52,7 @@ var config_data = `
       },
       "defaultValue": "f"
     },
-    { "name": "Can Score Coral L1?",
-      "code": "Cl1",
-      "type": "bool"
-    },
-    { "name": "Can Score Coral L2?",
-      "code": "CL2",
-      "type": "bool"
-    },
-    { "name": "Can Score Coral L3?",
-      "code": "CL3",
-      "type": "bool"
-    },
-    { "name": "Can Score Coral L4?",
-      "code": "CL$",
-      "type": "bool"
-    }
+    
   { "name": "Barge Hang",
       "code": "hng",
       "type": "radio",
