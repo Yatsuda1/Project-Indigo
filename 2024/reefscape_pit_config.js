@@ -66,7 +66,7 @@ var config_data = `
     { "name": "Can Score Coral L4?",
       "code": "CL4",
       "type": "bool"
-    }
+    },
     { "name": "Barge Hang",
       "code": "hng",
       "type": "radio",
