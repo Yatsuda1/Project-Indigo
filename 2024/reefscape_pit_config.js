@@ -75,6 +75,7 @@ var config_data = `
         "s": "Shallow Hang<br>",
         "b": "Both<br>",
         "n": "None"
+        }
     },
       "defaultValue": "n"
     },
