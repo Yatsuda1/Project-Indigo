@@ -28,9 +28,8 @@ var config_data = `
         "o": "Other"
       },
       "defaultValue": "s"
-    },
-    
-      { "name": "Can Intake Algae From",
+    },    
+    { "name": "Can Intake Algae From",
       "code": "IAF",
       "type": "radio",
       "choices": {
@@ -38,10 +37,10 @@ var config_data = `
         "r": "Reef<br>",
         "b": "Both<br>",
         "n": "None"
-      },
+    },
       "defaultValue": "r"
     },
-     { "name": "Can Intake Coral From",
+    { "name": "Can Intake Coral From",
       "code": "ICF",
       "type": "radio",
       "choices": {
@@ -49,11 +48,26 @@ var config_data = `
         "f": "Feeder Station<br>",
         "b": "Both<br>",
         "n": "None"
-      },
+    },
       "defaultValue": "f"
     },
-    
-  { "name": "Barge Hang",
+    { "name": "Can Score Coral L1?",
+      "code": "Cl1",
+      "type": "bool"
+    },
+    { "name": "Can Score Coral L2?",
+      "code": "CL2",
+      "type": "bool"
+    },
+    { "name": "Can Score Coral L3?",
+      "code": "CL3",
+      "type": "bool"
+    },
+    { "name": "Can Score Coral L4?",
+      "code": "CL4",
+      "type": "bool"
+    }
+    { "name": "Barge Hang",
       "code": "hng",
       "type": "radio",
       "choices": {
@@ -61,14 +75,14 @@ var config_data = `
         "s": "Shallow Hang<br>",
         "b": "Both<br>",
         "n": "None"
-      },
+    },
       "defaultValue": "n"
     },
     { "name": "Best Auto",
       "code": "apc",
       "type": "number"
     },
-       { "name": "Comments",
+    { "name": "Comments",
       "code": "co",
       "type": "text",
       "size": 20,
