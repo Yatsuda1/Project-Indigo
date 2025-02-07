@@ -137,11 +137,11 @@ var config_data = `
       "code": "fs",
       "type":"radio",
       "choices": {
-        "p": "Parked<br>",
-        "s": "Shallow Hang<br>",
-        "d": "Deep Hang<br>",
-        "f": "Attempted But Failed<br>",
-        "x": "Not attempted"
+        "2": "Parked<br>",
+        "6": "Shallow Hang<br>",
+        "12": "Deep Hang<br>",
+        "2": "Attempted But Failed<br>",
+        "0": "Not attempted"
       },
       "defaultValue": "x"
     }
