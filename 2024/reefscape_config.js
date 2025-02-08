@@ -85,6 +85,10 @@ var config_data = `
       "code": "ac1",
       "type": "counter"
     },
+     { "name": "Coral Drops",
+      "code": "ad",
+      "type": "counter"
+    },
     { "name": "Processor Scores",
       "code": "aps",
       "type": "counter"
@@ -93,7 +97,7 @@ var config_data = `
       "code": "ans",
       "type": "counter"
     },
-    { "name": "Drops",
+    { "name": "Algae Drops",
       "code": "ad",
       "type": "counter"
     }
@@ -115,6 +119,10 @@ var config_data = `
       "code": "tc1",
       "type": "counter"
     },
+        { "name": "Coral Drops",
+      "code": "tcd",
+      "type": "counter"
+    },
     { "name": "Processor Scores",
       "code": "tps",
       "type": "counter"
@@ -123,8 +131,8 @@ var config_data = `
       "code": "tns",
       "type": "counter"
     },
-    { "name": "Drops",
-      "code": "tdc",
+    { "name": "Algae Drops",
+      "code": "tad",
       "type": "counter"
     }
   ],
