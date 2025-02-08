@@ -140,10 +140,10 @@ var config_data = `
         "2": "Parked<br>",
         "6": "Shallow Hang<br>",
         "12": "Deep Hang<br>",
-        "2": "Attempted But Failed<br>",
+        "2": "Parked<br>",
         "0": "Not attempted"
       },
-      "defaultValue": "0"
+      "defaultValue": "2"
     }
   ],
   "postmatch": [
