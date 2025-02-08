@@ -69,20 +69,20 @@ var config_data = `
       "code": "al",
       "type": "bool"
     },
-    { "name": "L1 Coral Scores",
-      "code": "ac1",
-      "type": "counter"
-    },
-    { "name": "L2 Coral Scores",
-      "code": "ac2",
+    { "name": "L4 Coral Scores",
+      "code": "ac4",
       "type": "counter"
     },
     { "name": "L3 Coral Scores",
       "code": "ac3",
       "type": "counter"
     },
-    { "name": "L4 Coral Scores",
-      "code": "ac4",
+    { "name": "L2 Coral Scores",
+      "code": "ac2",
+      "type": "counter"
+    },
+    { "name": "L1 Coral Scores",
+      "code": "ac1",
       "type": "counter"
     },
     { "name": "Processor Scores",
@@ -99,20 +99,20 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "L1 Coral Scores",
-      "code": "tc1",
-      "type": "counter"
-    },
-    { "name": "L2 Coral Scores",
-      "code": "tc2",
+    { "name": "L4 Coral Scores",
+      "code": "tc4",
       "type": "counter"
     },
     { "name": "L3 Coral Scores",
       "code": "tc3",
       "type": "counter"
     },
-    { "name": "L4 Coral Scores",
-      "code": "tc4",
+    { "name": "L2 Coral Scores",
+      "code": "tc2",
+      "type": "counter"
+    },
+    { "name": "L1 Coral Scores",
+      "code": "tc1",
       "type": "counter"
     },
     { "name": "Processor Scores",
@@ -137,11 +137,11 @@ var config_data = `
       "code": "fs",
       "type":"radio",
       "choices": {
-        "2": "Parked<br>",
-        "6": "Shallow Hang<br>",
-        "12": "Deep Hang<br>",
-        "2": "Parked<br>",
-        "0": "Not attempted"
+        "bs": "Shallow Hang<br>",
+        "bd": "Deep Hang<br>",
+        "bp": "Parked<br>",
+        "bf": "Failed Climb<br>",
+        "bx": "Not attempted"
       },
       "defaultValue": "2"
     }
