@@ -143,7 +143,7 @@ var config_data = `
         "2": "Attempted But Failed<br>",
         "0": "Not attempted"
       },
-      "defaultValue": "x"
+      "defaultValue": "0"
     }
   ],
   "postmatch": [
