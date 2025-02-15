@@ -86,7 +86,7 @@ var config_data = `
       "type": "counter"
     },
      { "name": "Coral Drops",
-      "code": "ad",
+      "code": "acd",
       "type": "counter"
     },
     { "name": "Processor Scores",
